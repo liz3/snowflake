@@ -4,8 +4,6 @@
 
 #include "server.h"
 #include "snowflake.h"
-
-
 void trimTrailing(char *str) {
     int index, i;
     index = -1;
