@@ -29,7 +29,7 @@ long int get_id() {
 
 struct snowflake reverse(long int snowflake) {
     struct snowflake value;
-    value.timestamp = (snowflake >> (time_shift_bits)) + SNOWFLAKE_EPOCH;
+    value.timestamp = ((snowflake >> (time_shift_bits)) + SNOWFLAKE_EPOCH) / 1000;
     value.region_id = (snowflake & 0x3E0000) >> (region_shift_bits);
     value.worker_id = (snowflake & 0x1F000) >> (worker_shift_bits);
     value.increment = snowflake & 0xFFF;
