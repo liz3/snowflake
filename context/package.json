@@ -1,0 +1,15 @@
+{
+  "name": "illyria-id",
+  "version": "1.0.0",
+  "description": "A Wrapper around illyrias id system",
+  "main": "index.js",
+  "author": "Liz3",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}

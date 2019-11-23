@@ -37,12 +37,21 @@ void *connection_handler(void *socket_handler) {
             client_socket[payload.index] = 0;
             printf("Resetting client %d\n", payload.index);
 
-        } else {
-            char out[200];
+        } else if (strcmp(buffer, "id") == 0) {
+            char out[400];
             long int id = get_id();
-            sprintf(out, "%ld\n", id);
+            sprintf(out, "{\"id\":\"%ld\"}", id);
             send(payload.connection_id, out, strlen(out), 0);
+        }else {
+            long int id_to_parse;
+            sscanf(buffer, "%ld", &id_to_parse);
+            if (id_to_parse > 0) {
+                struct snowflake reversed = reverse(id_to_parse);
+                char out[1000];
+                sprintf(out, "{\"timestamp\": %ld, \"region_id\": %ld, \"worker_id\": %ld, \"increment\": %ld}", reversed.timestamp, reversed.region_id, reversed.worker_id, reversed.increment);
 
+                send(payload.connection_id, out, strlen(out), 0);
+            }
         }
     }
     pthread_exit(NULL);

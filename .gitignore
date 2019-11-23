@@ -1,0 +1,4 @@
+context/node_modules
+.idea
+cmake-build-debug
+.DS_Store
