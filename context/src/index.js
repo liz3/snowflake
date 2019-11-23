@@ -89,7 +89,7 @@ server.get("/", async (req, res) => {
     <html>
     <head>
     <meta property="og:type" content="website" />
-    <meta property="og:tite" content="${idData.id} | Illyra Snowflake" />
+    <meta property="og:title" content="${idData.id} | Illyra Snowflake" />
     <meta property="og:description" content="${idData.id}" />
     <meta property="og:url" content="https://id.illyria.io/from/${idData.id}" />
     <title>${idData.id} | Illyra Snowflake</title>
@@ -128,7 +128,7 @@ server.get("/from/:id", async (req, res) => {
         <html>
         <head>
         <meta property="og:type" content="website" />
-        <meta property="og:tite" content="${id} Reversed | Illyra Snowflake" />
+        <meta property="og:title" content="${id} Reversed | Illyra Snowflake" />
         <meta property="og:description" content="Time: ${timestamp} OR ${time}\nRegion/DatacenterId: ${region_id}\nWorker Id: ${worker_id}\nIncrement: ${increment}" />
         <meta property="og:url" content="https://id.illyria.io/from/${id}" />
         <title>${id} Reversed | Illyra Snowflake</title>
