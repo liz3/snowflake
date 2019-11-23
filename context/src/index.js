@@ -88,10 +88,10 @@ server.get("/", async (req, res) => {
     res.send(`<!DOCTYPE html>
     <html>
     <head>
-    <meta property="og:type" value="website" />
-    <meta property="og:tite" value="${idData.id} | Illyra Snowflake" />
-    <meta property="og:description" value="${idData.id}" />
-    <meta property="og:url" value="https://id.illyria.io/from/${idData.id}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:tite" content="${idData.id} | Illyra Snowflake" />
+    <meta property="og:description" content="${idData.id}" />
+    <meta property="og:url" content="https://id.illyria.io/from/${idData.id}" />
     <title>${idData.id} | Illyra Snowflake</title>
     </head>
     <body>
@@ -105,8 +105,8 @@ server.get("/", async (req, res) => {
     res.status(500).res.send(`<!DOCTYPE html>
     <html>
     <head>
-    <meta property="og:type" value="website" />
-    <meta property="og:url" value="https://id.illyria.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://id.illyria.io/" />
     <title>Error | Illyra Snowflake</title>
     </head>
     <body>
@@ -127,10 +127,10 @@ server.get("/from/:id", async (req, res) => {
         res.send(`<!DOCTYPE html>
         <html>
         <head>
-        <meta property="og:type" value="website" />
-        <meta property="og:tite" value="${id} Reversed | Illyra Snowflake" />
-        <meta property="og:description" value="Time: ${timestamp} OR ${time}\nRegion/DatacenterId: ${region_id}\nWorker Id: ${worker_id}\nIncrement: ${increment}" />
-        <meta property="og:url" value="https://id.illyria.io/from/${id}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:tite" content="${id} Reversed | Illyra Snowflake" />
+        <meta property="og:description" content="Time: ${timestamp} OR ${time}\nRegion/DatacenterId: ${region_id}\nWorker Id: ${worker_id}\nIncrement: ${increment}" />
+        <meta property="og:url" content="https://id.illyria.io/from/${id}" />
         <title>${id} Reversed | Illyra Snowflake</title>
         <style>
         p {
@@ -151,8 +151,8 @@ server.get("/from/:id", async (req, res) => {
         res.status(500).res.send(`<!DOCTYPE html>
     <html>
     <head>
-    <meta property="og:type" value="website" />
-    <meta property="og:url" value="https://id.illyria.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://id.illyria.io/" />
     <title>Error | Illyra Snowflake Reverser</title>
     </head>
     <body>
