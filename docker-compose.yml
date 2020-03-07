@@ -1,6 +1,6 @@
 version: '3'
 services:
-  illyriaid:
+  snowflake:
     build: ./
     restart: always
     container_name: snowflake-id
