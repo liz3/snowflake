@@ -89,10 +89,10 @@ server.get("/", async (req, res) => {
     <html>
     <head>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="${idData.id} | illyria Snowflake" />
+    <meta property="og:title" content="${idData.id} | Snowflake" />
     <meta property="og:description" content="${idData.id}" />
-    <meta property="og:url" content="https://id.illyria.io/from/${idData.id}" />
-    <title>${idData.id} | illyria Snowflake</title>
+    <meta property="og:url" content="https://id.21xayah.com/from/${idData.id}" />
+    <title>${idData.id} | Snowflake</title>
     </head>
     <body>
     <h2>Your id is:</h2>
@@ -106,8 +106,8 @@ server.get("/", async (req, res) => {
     <html>
     <head>
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://id.illyria.io/" />
-    <title>Error | illyria Snowflake</title>
+    <meta property="og:url" content="https://id.21xayah.com/" />
+    <title>Error | Snowflake</title>
     </head>
     <body>
     <p>${error}<p>
@@ -128,13 +128,13 @@ server.get("/from/:id", async (req, res) => {
         <html>
         <head>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="${id} Reversed | illyria Snowflake" />
+        <meta property="og:title" content="${id} Reversed | Snowflake" />
         <meta property="og:description" content="Time: ${timestamp} OR ${time}\nRegion/DatacenterId: ${region_id}\nWorker Id: ${worker_id}\nIncrement: ${increment}" />
-        <meta property="og:url" content="https://id.illyria.io/from/${id}" />
-        <title>${id} Reversed | illyria Snowflake</title>
+        <meta property="og:url" content="https://id.21xayah.com/from/${id}" />
+        <title>${id} Reversed | Snowflake</title>
         <style>
         p {
-            margin: 2px 0;            
+            margin: 2px 0;
         }
         </style>
         </head>
@@ -152,8 +152,8 @@ server.get("/from/:id", async (req, res) => {
     <html>
     <head>
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://id.illyria.io/" />
-    <title>Error | illyria Snowflake Reverser</title>
+    <meta property="og:url" content="https://id.21xayah.com/" />
+    <title>Error | Snowflake reversed</title>
     </head>
     <body>
     <p>${error}<p>
