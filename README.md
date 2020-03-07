@@ -2,7 +2,7 @@
 C implementation of a simple socket server replying with unique ids based on Twitters snowflake system.
 This might be used later in our services should it become necessary.
 
-[Instance](https://idapi.illyria.io)
+[Instance](https://id.21xayah.com)
 
 Binary
 ```

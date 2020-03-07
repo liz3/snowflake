@@ -3,6 +3,6 @@ services:
   illyriaid:
     build: ./
     restart: always
-    container_name: illyria-id
+    container_name: snowflake-id
     ports:
       - "3016:8080"
